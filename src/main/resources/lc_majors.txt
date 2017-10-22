@@ -1,0 +1,49 @@
+ACCTG|Accounting|Economics, Accounting, and Management|ECONOMICS & BUSINESS
+AFRS|Africana Studies|Africana Studies|AFRICANA STUDIES
+FCUL|Asian Studies|Modern Languages, Literatures and Linguistics|MODERN LANGUAGES, LITERATURES & LINGUISTICS
+ANTH|Anthropology|Sociology, Anthropology, Social Work|SOCIOLOGY, ANTHROPOLOGY & SOCIAL WORK
+ART|Art|Visual and Performing Arts|VISUAL & PERFORMING ARTS
+ARTH|Art History|Visual and Performing Arts|VISUAL & PERFORMING ARTS
+HEB|Biblical Languages|Classics|CLASSICS
+BIO|Biology|Biology|BIOLOGY
+CHEM|Chemistry|Chemistry|CHEMISTRY
+CHIN|Chinese|Modern Languages, Literatures and Linguistics|MODERN LANGUAGES, LITERATURES & LINGUISTICS
+Classical Studies|Classics|CLASSICS
+CLAS|Classics|Classics|CLASSICS
+COMS|Communication Studies|Communication Studies|COMMUNICATION STUDIES
+CS|Computer Science|Computer Science|COMPUTER SCIENCE
+DAN|Dance|Visual and Performing Arts|VISUAL & PERFORMING ARTS
+DS|Data Science|Computer Science|COMPUTER SCIENCE
+ECON|Economics|Economics, Accounting, and Management|ECONOMICS & BUSINESS
+EDUC|Education|Education|EDUCATION
+ENG|English|English|ENGLISH
+ENVS|Environmental Studies|Environmental Studies|ENVIRONMENTAL STUDIES
+FREN|French|Modern Languages, Literatures and Linguistics|MODERN LANGUAGES, LITERATURES & LINGUISTICS
+GER|German|Modern Languages, Literatures and Linguistics|MODERN LANGUAGES, LITERATURES & LINGUISTICS
+HLTH|Health and Fitness Promotion|Health and Physical Education|HEALTH & PHYSICAL EDUCATION
+HIST|History|History|HISTORY
+International Business|Economics, Accounting, and Management|ECONOMICS & BUSINESS
+GS,IS|International Studies|International Studies|POLITICAL SCIENCE
+JOUR|Journalism|Communication Studies|COMMUNICATION STUDIES
+SCST,GRK,LING|Linguistics|Modern Languages, Literatures and Linguistics|MODERN LANGUAGES, LITERATURES & LINGUISTICS
+MGT|Management|Economics, Accounting, and Management|ECONOMICS & BUSINESS
+MATH|Mathematics|Mathematics|MATHEMATICS
+Mathematics/Statistics|Mathematics|MATHEMATICS
+MUST|Museum Studies|Library|LIBRARY & INFORMATION STUDIES
+MUS|Music|Music|MUSIC
+NEUR|Neuroscience|Biology|BIOLOGY
+Nordic Studies|Modern Languages, Literatures and Linguistics|MODERN LANGUAGES, LITERATURES & LINGUISTICS
+NURS|Nursing|Nursing|NURSING
+PAID|Paideia|Paideia|ENGLISH
+PHIL|Philosophy|Philosophy|PHILOSOPHY
+ATHTR,PE|Physical Education|Health and Physical Education|HEALTH & PHYSICAL EDUCATION
+SCI,PHYS|Physics|Physics|PHYSICS
+POLS|Political Science|Political Science|POLITICAL SCIENCE
+PSYC|Psychology|Psychology|PSYCHOLOGY
+REL|Religion|Religion|RELIGION
+RUS|Russian Studies|Modern Languages, Literatures and Linguistics|MODERN LANGUAGES, LITERATURES & LINGUISTICS
+WGST|Social Welfare|Sociology, Anthropology, Social Work|SOCIOLOGY, ANTHROPOLOGY & SOCIAL WORK
+SW|Social Work|Sociology, Anthropology, Social Work|SOCIOLOGY, ANTHROPOLOGY & SOCIAL WORK
+SOC|Sociology|Sociology, Anthropology, Social Work|SOCIOLOGY, ANTHROPOLOGY & SOCIAL WORK
+LAT,SPAN|Spanish|Modern Languages, Literatures and Linguistics|MODERN LANGUAGES, LITERATURES & LINGUISTICS
+THE|Theatre|Visual and Performing Arts|VISUAL & PERFORMING ARTS
