@@ -453,6 +453,8 @@ class LutherScrapper {
             studentList.add(new Student(nameList[i], randomgenerator.nextInt(totalSemester),
                     randomgenerator.nextInt(totalMajors), randomgenerator.nextInt(totalFaculty)));
         }
+        studentList.add(new Student("John Doe", randomgenerator.nextInt(totalSemester),
+                randomgenerator.nextInt(totalMajors), randomgenerator.nextInt(totalFaculty)));
         this.studentList = studentList;
     }
 

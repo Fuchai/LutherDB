@@ -32,6 +32,14 @@ public class LutherDB {
         DB();
         System.out.println("Database has been created and data has been filled out.\n" +
                 "Go to URL "+DW.dataSource.getURL());
+        TRIGG_VIEW();
+        System.out.println("Triggers and Views created.");
+
+    }
+
+    private void TRIGG_VIEW(){
+        DW.writeTriggers();
+        DW.writeViews();
     }
 
     private void DB() {
@@ -51,6 +59,8 @@ public class LutherDB {
             DW.writeSectionTable(LS.sectionList);
             DW.writeStudentTable(LS.studentList);
             DW.writeEnrollmentTable(LS.enrollmentList);
+
+            DW.JohnDoe();
 
         } catch (SQLException e) {
             e.printStackTrace();

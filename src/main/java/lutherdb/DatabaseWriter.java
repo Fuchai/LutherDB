@@ -534,4 +534,103 @@ public class DatabaseWriter {
         db_connection.close();
     }
 
+    public void writeTriggers() {
+        // Your NULL triggers don't make any sense.
+        // If you do not enter any data, that would be defaulted to null.
+        // If you enter any data, that should not be overwritten to null.
+        // What's the point of null triggers? Used by nobody ever.
+
+        try {
+            db_connection = dataSource.getConnection();
+            statement = db_connection.createStatement();
+
+            statement.execute("DROP TRIGGER IF EXISTS new_faculty; ");
+            statement.execute("DROP TRIGGER IF EXISTS new_student; ");
+            statement.execute("DROP TRIGGER IF EXISTS new_enroll; ");
+
+                    statement.execute("CREATE TRIGGER " +
+                    "new_faculty AFTER INSERT ON faculty " +
+                    "FOR EACH ROW " +
+                    "begin " +
+                    "update faculty set enddate=null where id=new.id; " +
+                    "end;");
+
+            statement.execute("CREATE TRIGGER " +
+                    "new_student AFTER INSERT ON student " +
+                    "FOR EACH ROW " +
+                    "begin " +
+                    "update student set major=null where id=new.id; " +
+                    "end;");
+
+            statement.execute("CREATE TRIGGER " +
+                    "new_enroll AFTER INSERT ON enrollment " +
+                    "FOR EACH ROW " +
+                    "begin " +
+                    "update enroll set grade=null where id=new.id; " +
+                    "end;");
+            db_connection.close();
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void writeViews() {
+
+        try {
+            db_connection = dataSource.getConnection();
+            statement = db_connection.createStatement();
+
+            statement.execute("DROP view IF EXISTS advisee; ");
+            statement.execute("DROP view IF EXISTS roster; ");
+            statement.execute("DROP view IF EXISTS transcript; ");
+            statement.execute("DROP view IF EXISTS majorers; ");
+            statement.execute("DROP view IF EXISTS seniors; ");
+
+
+            //good.
+            statement.execute("CREATE VIEW advisee as " +
+                    "select * from student " +
+                    "where advisor= (Select id from faculty " +
+                    "where name='Miller, Brad');");
+
+            //good.
+            statement.execute("CREATE VIEW roster as " +
+                    "select * from enrollment " +
+                    "where section=1;");
+
+            statement.execute("CREATE VIEW transcript as " +
+                    "select name, course.title,enrollment.grade from course join section  " +
+                    " on section.course=course.id " +
+                    "join enrollment on enrollment.section=section.id " +
+                    "join student on enrollment.student=student.id " +
+                    "where student.name='John Doe'");
+
+            statement.execute("CREATE VIEW majorers as " +
+                    "select name,graduationDate,major,advisor from student " +
+                    "where major=(select id from major where name='Accounting')");
+            //good.
+            statement.execute("CREATE VIEW seniors as " +
+                    "select * from student where (select year from " +
+                    "semester where id=graduationDate)<=year(now())");
+            db_connection.close();
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void JohnDoe() {
+        try {
+            db_connection = dataSource.getConnection();
+            statement = db_connection.createStatement();
+            statement.execute("INSERT INTO ENROLLMENT (student, section, grade) VALUES " +
+                    "((select id from student where name='John Doe')," +
+                    "(select id from semester where year=2017 and season='Summer2'),'A')");
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+    }
 }
